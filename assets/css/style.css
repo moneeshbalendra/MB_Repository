@@ -1,50 +1,74 @@
-:root{
+/* -------------------------------------- Colour Theme ---------------------------------- */
+:root {
     --primary: #022f74;
-    --dark:#0a0b0e;
+    --dark: #0a0b0e;
     --body: #21252f;
-    --box-shadow:0 8px 22px rgba(0,0,0,0.1)
+    --footer: #6e6d6d;
+    --box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1)
 }
 
-
-body{
-    font-family:"Sora", "sans-serif";
-    line-height:1.7;
-    color: var(--body); 
+/* -------------------------------------- Fonts ---------------------------------- */
+body {
+    font-family: "Sora", "sans-serif";
+    line-height: 1.7;
+    color: var(--body);
 }
 
-h1, h2, h3, h4, h5, h6, .display-4{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.display-4 {
     color: var(--dark);
-    font-weight:700; 
+    font-weight: 700;
 }
 
-
-a{
+/* -------------------------------------- Links ---------------------------------- */
+a {
     color: var(--dark);
     text-decoration: none;
 }
 
-
-.navbar .logo{
-    width:160px;
-    height: 100px;
-    background-color: #21252f;
-    
-}
-
-.navbar .nav-link{
+.navbar .nav-link {
     font-size: 14px;
     font-weight: 700;
 }
 
-
-.btn{
-    padding: 14px 18px;
-    border-radius: 2px;
-    background-color: #21252f;
+/* -------------------------------------- Logo ---------------------------------- */
+.logo {
+    width: 160px;
+    height: 100px;
+    background-color: var(--body);
 }
 
-.hero{
-    background-image:url(/assets/image/characters-looking-job.jpg);
+/* -------------------------------------- Buttons ---------------------------------- */
+.btn {
+    padding: 14px 18px;
+    border-radius: 2px;
+    background-color: var(--body);
+    border-color: transparent;
+}
+
+.btn:hover {
+    background-color: var(--primary);
+}
+
+a.btn {
+    color: #fff
+}
+
+a.btn:hover {
+    background-color: var(--primary);
+    color: #fff;
+    border: transparent;
+
+}
+
+/* -------------------------------------- Home Page ---------------------------------- */
+.hero {
+    background-image: url(/assets/image/characters-looking-job.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -52,35 +76,52 @@ a{
     z-index: 1;
 }
 
-/* Background image overlay */
-.hero::after{
+/* -------------------------------------- Home Page - BG Image Overlay ---------------------------------- */
+.hero::after {
     content: "";
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(46, 46, 58, 0.85);
+    background-color: rgba(18, 18, 60, 0.85);
     z-index: -1;
 }
 
-section{
+/* -------------------------------------- Services Page ---------------------------------- */
+section {
     padding-top: 140px;
     padding-bottom: 140px;
 }
 
-.card-effect{
-box-shadow: var(--box-shadow);
-background-color: #fff;
-padding: 25px;
-transition: all 0.35s ease;
+.card-effect {
+    box-shadow: var(--box-shadow);
+    background-color: #fff;
+    padding: 25px;
+    top: 0;
+    position: relative;
+    z-index: 1;
+    height: 450px;
 }
 
-.card-effect:hover{
+.card-effect:hover h5 {
+    color: #fff;
+}
+
+.card-effect:hover .iconbox {
+    background-color: #fff;
+    color: var(--primary);
+}
+
+.card-effect:hover {
     box-shadow: none;
-    transform: translateX(5px);
+    top: 5%;
+    color: #fff;
+    transition: all 0.4s ease-in-out;
+    background-color: var(--primary);
 }
 
+/* -------------------------------------- Icons - Services Page ---------------------------------- */
 .iconbox {
     width: 54px;
     height: 54px;
@@ -93,3 +134,84 @@ transition: all 0.35s ease;
     border-radius: 100px;
 }
 
+/* -------------------------------------- Team Page ---------------------------------- */
+.team-member img {
+    width: 225px;
+    height: 320px;
+    border-radius: 350px;
+}
+
+.team-member {
+    box-shadow: var(--box-shadow);
+    background-color: #fff;
+    padding: 25px;
+    top: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.team-member:hover {
+    box-shadow: none;
+    transform: translateX(5px);
+}
+
+
+/* -------------------------------------- Social Icons - Team Page & Footer ---------------------------------- */
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons a {
+    width: 34px;
+    height: 34px;
+    background-color: var(--primary);
+    border-radius: 2px solid var(--primary);
+    border: 2px solid var(--primary);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    margin-left: 5px;
+    transition: all 0.4s ease;
+}
+
+.social-icons a:hover {
+    color: var(--primary);
+    background-color: transparent;
+}
+
+
+/* -------------------------------------- Contact ---------------------------------- */
+
+form input .form-control {
+    height: 56px;
+}
+
+form .form-control {
+    border: transparent;
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+
+/* -------------------------------------- Footer ---------------------------------- */
+.footer-top {
+    padding-bottom: 90px;
+    padding: 90px;
+    background-color: var(--dark);
+}
+
+.footer-top a,
+li {
+    color: var(--footer);
+}
+
+.footer-top a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    background-color: var(--footer);
+}
