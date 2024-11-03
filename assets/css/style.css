@@ -68,7 +68,7 @@ a.btn:hover {
 
 /* -------------------------------------- Home Page ---------------------------------- */
 .hero {
-    background-image: url(/assets/image/characters-looking-job.jpg);
+    background-image: url(assets/image/characters-looking-job.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
