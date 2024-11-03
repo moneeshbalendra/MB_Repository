@@ -104,7 +104,7 @@ section {
     height: 450px;
 }
 
-.card-effect:hover h5 {
+.card-effect:hover h3 {
     color: #fff;
 }
 
@@ -194,6 +194,16 @@ form .form-control {
     border-radius: 0;
     background-color: rgba(0, 0, 0, 0.02);
 }
+
+.button-container{
+    display: inline-flex;
+    width: 40%;
+    justify-content:center;
+    margin-left: 5px;
+}
+
+
+
 
 
 /* -------------------------------------- Footer ---------------------------------- */
