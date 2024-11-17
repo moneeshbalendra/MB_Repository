@@ -231,6 +231,10 @@ li {
     color: #fff;
 }
 
+.footer-top h3{
+    font-size: calc(0.8em + 0.2vw);
+}
+
 .footer-bottom {
     background-color: var(--footer);
 }
