@@ -174,7 +174,7 @@ section {
     width: 34px;
     height: 34px;
     background-color: var(--primary);
-    border-radius: 2px solid var(--primary);
+    border-radius: 2px var(--primary);
     border: 2px solid var(--primary);
     color: #fff;
     display: flex;
