@@ -68,7 +68,11 @@ a.btn:hover {
 
 /* -------------------------------------- Home Page ---------------------------------- */
 .hero {
+<<<<<<< HEAD
     background-image: url(../image/recruitment.jpeg);
+=======
+    background-image: url(../assets/image/recruitment.jpeg);
+>>>>>>> a90ccba (Add vieport to fonts)
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
